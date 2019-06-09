@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "rusty_shop",
+]
+
+
+[profile.dev]
+opt-level=0
+lto = false
+
+

@@ -1,0 +1,8 @@
+version: '3'
+services:
+  homework_assignment_1337:
+    build: .
+    image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:homework_assignment_1337
+    read_only: true
+    ports:
+     - "9090:9090"

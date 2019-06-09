@@ -1,0 +1,30 @@
+version: "3.3"
+services:
+  webserver:
+    build: ./src/bin/webserver
+    image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:webserver
+    container_name: 'png-webserver'
+    restart: 'always'
+    networks:
+      - silver-network
+    ports:
+      - "80:80"
+      - "443:443"
+    links:
+      - postgres
+  postgres:
+    build: ./src/bin/postgres
+    image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:postgres
+    container_name: 'postgres-11.2'
+    restart: 'always'
+    networks:
+      - silver-network
+    ports:
+      - "127.0.0.1:5432:5432"
+    environment:
+      POSTGRES_PASSWORD: vG6hwC2NwsJrL5YpARsX
+      PGDATA: /tmp/postgres
+
+networks:
+  silver-network:
+    driver: bridge

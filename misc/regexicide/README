@@ -1,0 +1,30 @@
+Challenge text:
+I finally figured out the passphrase to the EVIL club. It's pretty complicated so I've decided to store it in my server in case I forget. I've protected it with a password though, so it's virtually impossible for anyone else to get it. I sometimes accidentally enter my password multiple times, so I added a twist to my server to handle that case too. For some reason my server gets bloated after a while - nothing frequent deploys can't fix.
+
+Overview:
+This is an hhvm vulnerability where the hhvm admin panel has methods that dump data to user controlled paths.
+
+The admin panel can be accessed with port 9001, and the method we're interested in is dump-pcre-cache, which can be used to dump the regular expression cache to a directory where hhvm serves files, like so:
+  curl 127.0.0.1:9001/dump-pcre-cache?file=/var/www/public/test
+
+Note that the file parameter is NOT documented in the help section of admin panel, but a quick github search shows the hidden parameter: https://github.com/facebook/hhvm/blob/master/hphp/runtime/server/admin-request-handler.cpp#L692
+
+There's a script that cleans up /var/www/public directory every so often, so the attacker must:
+  1- Fill pcre cache (by sending a random string to index.php?password)
+  2- Dump pcre cache to /var/www/public
+  3- Read the file
+... in a short time interval.
+
+Challenge category is misc.
+
+This is an easy challenge.
+
+The solution requires sending 4 requests total, which are in solved.sh
+
+Deployment:
+docker-compose build && docker-compose up
+
+To change the password and/or the flag, run the helper script:
+./gen-from-template.sh [-p password, omit for random] [-f flag, omit for random] [-d redeploy interval in seconds, default 3]
+I've already checked in generated files so it's not necessary to run it, here's what I ran:
+./gen-from-template.sh -f 'fb{fromMyPoint0fViewTheEVILClubIsEvil}' -d 3

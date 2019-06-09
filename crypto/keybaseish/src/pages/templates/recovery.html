@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Account Recovery{% endblock %}
+
+{% block content %}
+<div class="w3-display-middle w3-center">
+  <p class="w3-text-white" style="font-size:30px">
+    Lost your password?</p>
+  <p class="w3-text-white">That's ok, it happens to all of us. Just look at how our Founder had to recover his account, <a href="https://twitter.com/baseishcoinfou1">https://twitter.com/baseishcoinfou1</a>.
+  </p>
+
+  <p class="w3-text-white">Follow these steps to regain access to
+    your account. Find your pin below, sign it using the script we've provided.
+    The script will give you a digital signature that you will tweet from your
+    account. Once we see the signature, we'll give you a temporary password
+    that you can use to login to your account.</p>
+  <p class="w3-text-white" style="font-size:30px">This is your pin: {{ pin }}</p>
+  <p class="w3-text-white" >Use this script to generate your signature: <a href="/download">download</a></p>
+
+  <form action="/temppass" method="POST">
+    {% csrf_token %}
+    <p class="w3-text-white">Please enter your twitter handle</p>
+    <input type="text" name="handle" size=50 />
+    <p class="w3-text-white">Enter your public key from the Script</p>
+    <textarea name="pubkey" cols=50 rows=5 /></textarea><br>
+    <input type="submit" /><br>
+  </form>
+</div>
+{% endblock %}

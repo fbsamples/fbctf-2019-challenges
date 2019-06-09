@@ -1,0 +1,1 @@
+add_executable (flag flag_main.c)

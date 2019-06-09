@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>The most secure note keeper</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Secret Note keeper</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/notes">All Notes <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/search">Search Notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/report_bugs">Report bugs</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/logout">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</button>
+        </form>
+      </div>
+    </nav>
+
+    {% if current_user.is_authenticated %}
+      <div class="container my-4">
+        <form method="POST" action="/notes">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Note title</label>
+            <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Title">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Body (secret info!)</label>
+            <textarea name="body" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+      </div>
+
+      {% if notes|length > 0 %}
+        <div class="container my-4">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Content</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for note in notes %}
+              <tr>
+                <td>{{ note.title }}</td>
+                <td>{{ note.body|truncate(80, False, '...') }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% else %}
+        <div class="alert alert-danger" role="alert">
+          You have not inserted any notes yet!
+        </div>
+      {% endif %}
+
+    {%else %}
+        <div class="alert alert-danger" role="alert">
+          You need to login
+        </div>
+    {% endif %}
+    
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+service overfloat
+{
+	disable     = no
+	socket_type = stream
+	protocol    = tcp
+	wait        = no
+	log_type    = FILE /var/log/xinetdlog
+	log_on_success = HOST PID EXIT DURATION
+	log_on_failure = HOST
+	user        = overfloat
+	bind        = 0.0.0.0
+	server      = /home/overfloat/overfloat
+	type        = UNLISTED
+	port        = 2302
+	per_source  = 2
+}

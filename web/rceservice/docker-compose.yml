@@ -1,0 +1,11 @@
+version: '3'
+services:
+  rceservice:
+    build: .
+    image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:rceservice
+    read_only: true
+    tmpfs:
+      - /run
+      - /tmp
+    ports:
+     - "80:80"

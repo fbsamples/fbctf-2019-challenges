@@ -1,0 +1,12 @@
+[build]
+rustflags = [
+  "-C", "relocation-model=dynamic-no-pic",
+  "-C", "link-arg=-no-pie",
+  "-C", "link-arg=-Wl,--section-start=.text=0x003060e0",
+  "-C", "link-arg=-Wl,--section-start=.interp=0x520000",
+  "-C", "link-arg=-Wl,--section-start=.got=0x0090cf30",
+  "-C", "link-arg=-Wl,--section-start=.data.rel.ro=0x00700050",
+  "-C", "link-arg=-fwhole-program",
+  "-C", "link-dead-code",
+]
+

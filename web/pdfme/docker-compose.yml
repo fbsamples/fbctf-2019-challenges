@@ -1,0 +1,7 @@
+version: '3'
+services:
+  pdfme:
+    build: .
+    image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:pdfme
+    ports:
+     - "80:80"

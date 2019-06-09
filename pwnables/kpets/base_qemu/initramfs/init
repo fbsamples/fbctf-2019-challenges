@@ -1,0 +1,56 @@
+#!/bin/sh
+
+export PATH=/bin
+
+[ -d /dev ] || mkdir -m 0755 /dev
+[ -d /sys ] || mkdir /sys
+[ -d /proc ] || mkdir /proc
+[ -d /tmp ] || mkdir /tmp
+[ -d /run ] || mkdir /run
+[ -d /root ] || mkdir /root
+[ -d /etc ] || mkdir /etc
+[ -d /home ] || mkdir /home
+
+echo 'root:x:0:0:root:/root:/bin/sh' > /etc/passwd
+echo 'root:x:0:' > /etc/group
+chmod 644 /etc/passwd
+chmod 644 /etc/group
+
+
+# This gives permission denied when tryin to lock /etc/passwd and /etc/groups, but still succeeds, so just ignore error
+adduser user --disabled-password 2>/dev/null
+
+chown -R root:root /
+chmod 700 -R /root
+chown user:user /home/user
+chmod 777 /home/user
+chmod 755 /dev
+chmod 777 /tmp/
+
+mkdir -p /var/lock
+mount -t sysfs -o nodev,noexec,nosuid sysfs /sys
+mount -t proc -o nodev,noexec,nosuid proc /proc
+ln -sf /proc/mounts /etc/mtab
+mount -t devtmpfs -o nosuid,mode=0755 udev /dev
+mkdir -p /dev/pts
+mount -t devpts -o noexec,nosuid,gid=5,mode=0620 devpts /dev/pts || true
+mount -t tmpfs -o "noexec,nosuid,size=10%,mode=0755" tmpfs /run
+
+echo 0 > /proc/sys/kernel/kptr_restrict
+echo 1 > /proc/sys/kernel/perf_event_paranoid
+
+modprobe kpets
+chmod go+rw /dev/kpets
+chmod +rwx /bin/exploit
+
+cat <<EOF
+ __  __     ______   ______     ______   ______    
+/\ \/ /    /\  == \ /\  ___\   /\__  _\ /\  ___\   
+\ \  _"-.  \ \  _-/ \ \  __\   \/_/\ \/ \ \___  \  
+ \ \_\ \_\  \ \_\    \ \_____\    \ \_\  \/\_____\ 
+  \/_/\/_/   \/_/     \/_____/     \/_/   \/_____/ 
+                                                   
+EOF
+
+exec su user
+exec /bin/sh

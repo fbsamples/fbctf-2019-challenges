@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Secret Messages{% endblock %}
+
+{% block content %}
+<div class="w3-display-middle w3-center">
+  <p class="w3-text-white" style="font-size:30px">Secret Message from @ctf:</p>
+  <p class="w3-text-white" >this is your secret message: {{ flag }}</p>
+</div>
+{% endblock %}

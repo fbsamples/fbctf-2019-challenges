@@ -1,0 +1,3 @@
+plyplus==0.7.5
+pycryptodome==3.8.1
+

@@ -1,0 +1,20 @@
+version: '3.2'
+services:
+  regexicide:
+    build: .
+    image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:regexicide
+    read_only: True
+    volumes:
+      - type: volume
+        source: varrun
+        target: /var/run
+      - type: volume
+        source: varwwwpublic
+        target: /var/www/public
+    ports:
+     - "80:80"
+     - "9001:9001"
+
+volumes:
+  varrun:
+  varwwwpublic:

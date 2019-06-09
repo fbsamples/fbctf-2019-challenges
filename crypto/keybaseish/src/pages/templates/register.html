@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Registration{% endblock %}
+
+{% block content %}
+<div class="w3-display-middle w3-center">
+  <p class="w3-text-white" style="font-size:30px">
+    Let's get started!
+  <p class="w3-text-white">Just give us your twitter username, and choose a password to create
+    an account with us. Once you create an account, you'll verify your ownership of
+    the twitter account by tweeting an unforgeable digital signature that you own the account.</p>
+  <form action="/register" method="POST">
+    {% csrf_token %}
+    <p class="w3-text-white">Twitter handle:</p>
+    <input type="text" name="handle" size=50 />
+    <p class="w3-text-white">Password:</p>
+    <input type="password" name="password" size=50 />
+    <p class="w3-text-white">Confirm Password:</p>
+    <input type="password" name="password" size=50 />
+    <p><input type="submit" onclick="alert('Sorry, registration is broken.'); return false;"/></p>
+  </form>
+</div>
+{% endblock %}

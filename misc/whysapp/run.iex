@@ -1,0 +1,11 @@
+import Whysapp
+
+defmodule Looper do
+    def loop(socket) do
+        Whysapp.recv(socket)
+        loop(socket)
+    end
+end
+
+{:ok, socket} = Whysapp.connect()
+Looper.loop(socket)

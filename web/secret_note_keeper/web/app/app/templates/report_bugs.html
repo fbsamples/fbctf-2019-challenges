@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>The most secure note keeper</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Secret Note keeper</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/notes">All Notes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/search">Search Notes</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/report_bugs">Report bugs<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/logout">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</button>
+        </form>
+      </div>
+    </nav>
+
+    {% if current_user.is_authenticated %}
+      <div class="container my-4">
+          <div class="container my-4">
+            <form method="POST" action="/report_bugs">
+              <div class="form-group">
+                <label for="BugControlInput1">Title</label>
+                <input type="text" name="title" class="form-control" id="BugControlInput1" placeholder="Title">
+                <label for="BugControlInput2">Body</label>
+                <input type="text" name="body" class="form-control" id="BugControlInput2" placeholder="Explain what went wrong">
+                <label for="BugControlInput3">Link</label>
+                <input type="text" name="link" class="form-control" id="BugControlInput3" placeholder="Link to reproduce the bug">
+                <label for="BugControlInput4">proof of work for {{real_pow}} (proof of work is first 5 chars of md5(plain_text)) You should supply the plain-text</label>
+                <input type="text" name="pow_sol" class="form-control" id="BugControlInput4" placeholder="proof of work">
+              </div>
+              <button type="submit" class="btn btn-primary">Report</button>
+            </form>
+          </div>
+
+          {% if bugs|length > 0 %}
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Title</th>
+                  <th scope="col">Body</th>
+                  <th scope="col">Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for bug in bugs %}
+                <tr>
+                  <td>{{ bug.title }}</td>
+                  <td>{{ bug.body|truncate(80, False, '...') }}</td>
+                  <td>{{ bug.link }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          {% else %}
+            <div class="alert alert-danger" role="alert">
+              You have not reported any bugs yet!
+            </div>
+          {% endif %}
+      </div>
+
+    {%else %}
+      <div class="alert alert-danger" role="alert">
+        You need to login
+      </div>
+    {% endif %}
+
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+## Summary
+ - category: pwnables
+ - name: r4nk
+ - difficulty: easy-medium (one degree harder than a "baby's first")
+ - flag: Flag to be located in flag.txt or other file in obvious directory
+ - author: meta
+
+## Description
+
+The r4nk challenge binary is a 64-bit ELF Linux pwnable challenge compiled with
+a NX stack, stack canaries, with the intent that ASLR will be enabled. The
+program is a simple text interface for ranking movies. The rank option allows
+the user to specify the index of the title to rank and the new rank/value.
+This creates a write-what-where style memory corruption with 64-bit integers.
+Because the ranking is implemented with an array on the stack the program can
+be manipulated to corrupt the stack without smashing any canaries.
+
+## Example
+
+```
+wE1c0m3 t0 tItLe R4nK
+=====================
+
+1. Show
+2. Rank
+3. Quit
+> 1
+
+0. Hackers
+1. Get Shorty
+2. Iron Man
+3. Mad Max
+4. Return of the Jedi
+5. Happy Gilmore
+6. The Boondock Saints
+7. The Net
+8. Sneakers
+9. Short Circuit
+10. Real Genious
+11. The Princess Bride
+
+1. Show
+2. Rank
+3. Quit
+> 2
+
+t1tl3> 10
+r4nk> 3
+
+1. Show
+2. Rank
+3. Quit
+> 2
+
+t1tl3> -1
+r4nk> 0x41414141
+
+Segmentation fault (core dumped)
+```
+
+
+## Setup
+ - ASLR enabled
+ - xinetd or socat, e.g.
+   socat -d -d tcp4-l:4242,reuseaddr,fork exec:"./r4nk"
+
+
+## Files to Distribute
+ - dist/r4nk
+ - libc.so.6 (optional)
+
+
+## Solution
+
+The intended solution is to use the program's write-what-where bug to corrupt
+the stack and exploit the program in two stages.
+
+The first stage will be a ROP payload that is written to the stack in reverse
+order such that the last write-what-where operation will overwrite save RIP
+with the first gadget (to prevent premature crashing). The payload will perform
+an info disclosure of the GOT entry for write (to calculate the offset of libc).
+Conveniently, the program has a utility function built into it (prompt() in the
+src), that writes memory to stdout based on two arguments then reads 128 bytes
+from stdin then. This simplifies exploitation on 64-bit because the compiled binary
+does not have a convenient 'pop rdx' gadget. The other intended solution is ret2csu.  
+The last gadget in the first stage ROP chain is a stack pivot to take advantage of the
+read functionality of prompt() which has been deliberately simplified by always
+writing user input to the same predictable memory location (.bss).
+
+The second stage begins by reading the GOT information disclosure value from
+the stdout (or socket) and calculating the offset of libc. This is sufficient if
+the libc shared binary is provided with the challenge, or marginally more difficult
+the player can use libcdb to calculate the offset. Then the stage two ROP chain
+is assembled to pop values into rdi/rsi and execute execve(). Conveniently rdx is
+already zero. The string "/bin/sh" can be included at the end of the stage two
+payload and addressed as an offset from the pivot location. The stack pivot
+invokes stage two and the user has a shell.

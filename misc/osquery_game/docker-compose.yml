@@ -1,0 +1,7 @@
+version: '3'
+services:
+  osquery_game:
+    build: .
+    image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:osquery_game
+    ports:
+     - "2222:22"

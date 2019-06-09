@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>Keybaseish</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #222222;
+  min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="/" class="w3-bar-item w3-button">home</a>
+    <a href="/login" class="w3-bar-item w3-button">login</a>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+      <span class="w3-tag w3-xlarge">{% block title %}{% endblock %}</span>
+  </div>
+  {% block content %}
+  {% endblock %}
+</header>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Account Login{% endblock %}
+
+{% block content %}
+<div class="w3-display-middle w3-center">
+  <p class="w3-text-white">Use your Twitter username and your password to login.</p>
+  <form action="/messages" method="POST">
+    {% csrf_token %}
+    <p class="w3-text-white">Twitter handle:</p>
+    <input type="text" name="handle" size=50 />
+    <p class="w3-text-white">Password:</p>
+    <input type="password" name="password" size=50 />
+    <p><input type="submit"/></p>
+  </form>
+  <p><a href="/recover" class="w3-button w3-black">Forgot your password?</a></p>
+</div>
+{% endblock %}

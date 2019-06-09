@@ -1,0 +1,13 @@
+version: '3'
+services:
+  rusty_shop:
+    build: .
+    image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:rusty_shop
+    read_only: true
+    volumes:
+      - logs:/var/log
+    ports:
+     - "2010:2010"
+
+volumes:
+  logs:

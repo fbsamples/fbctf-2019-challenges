@@ -1,0 +1,25 @@
+version: '3.3'
+services:
+  web:
+    build: ./web
+    image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:secret_note_keeper_web
+    ports:
+     - "80:80"
+    restart: 'always'
+    networks:
+      - silver-network
+  adminbot:
+      build: ./adminbot
+      image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:secret_note_keeper_adminbot
+      restart: 'always'
+      cap_add:
+        - SYS_ADMIN
+      depends_on:
+        - web
+      links:
+        - "web:web"
+      networks:
+        - silver-network
+networks:
+  silver-network:
+    driver: bridge

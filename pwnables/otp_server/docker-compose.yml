@@ -1,0 +1,13 @@
+version: '3'
+services:
+  otp_server:
+    build: .
+    image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:otp_server
+    read_only: true
+    volumes:
+      - logs:/var/log
+    ports:
+     - "2301:2301"
+
+volumes:
+  logs:

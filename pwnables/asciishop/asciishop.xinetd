@@ -1,0 +1,15 @@
+service asciishop
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    log_type    = FILE /var/log/xinetdlog
+    log_on_success = HOST PID
+    log_on_failure = HOST
+    user        = asciishop
+    bind        = 0.0.0.0
+    server      = /home/asciishop/asciishop
+    type        = UNLISTED
+    port        = 2301
+}

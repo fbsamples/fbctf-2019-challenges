@@ -1,0 +1,7 @@
+version: '3'
+services:
+  storagespace:
+    build: .
+    image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:storagespace
+    ports:
+     - "2302:2302"

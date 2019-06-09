@@ -1,0 +1,11 @@
+[package]
+name = "imageprot"
+version = "0.1.0"
+authors = ["Nick Anderson <thor@fb.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.7"
+md5 = "0.6.1"
+sysinfo = "0.8.2"
+base64 = "0.10.1"

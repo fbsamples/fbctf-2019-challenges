@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    image: 496096642801.dkr.ecr.us-west-2.amazonaws.com/fbctf-2019:keybaseish
+    command: python manage.py runserver 0.0.0.0:8080
+    ports:
+      - "8080:8080"

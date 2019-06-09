@@ -1,0 +1,15 @@
+service babylist
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    log_type    = FILE /var/log/xinetdlog
+    log_on_success = HOST PID EXIT DURATION
+    log_on_failure = HOST
+    user        = babylist
+    bind        = 0.0.0.0
+    server      = /home/babylist/babylist
+    type        = UNLISTED
+    port        = 2301
+}

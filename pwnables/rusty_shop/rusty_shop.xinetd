@@ -1,0 +1,16 @@
+service rusty_shop
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    log_type    = FILE /var/log/xinetdlog
+    log_on_success = HOST PID EXIT DURATION
+    log_on_failure = HOST
+    user        = rusty_shop
+    bind        = 0.0.0.0
+    server      = /home/rusty_shop/rusty_shop
+    type        = UNLISTED
+    port        = 2010
+    per_source  = 2
+}
