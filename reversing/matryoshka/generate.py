@@ -1,3 +1,4 @@
+from __future__ import print_function
 # Generate
 import ctypes
 from ctypes import *
@@ -1083,7 +1084,7 @@ def main():
         VERIFYC = C[0] ^ D[0]
         VERIFYB = B[0] ^ C[0]
         VERIFYA = A[0] ^ B[0]
-        print hex(FLAG_INTEGER)
+        print(hex(FLAG_INTEGER))
 
         # ----------------------------------
         # RC4 ENCRYPTION

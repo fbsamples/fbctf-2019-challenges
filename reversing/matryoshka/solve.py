@@ -1,3 +1,4 @@
+from __future__ import print_function
 # solve.py
 import ctypes
 from ctypes import *
@@ -14,7 +15,7 @@ rc4_encrypted = [
 
 def solve_rot13(key):
     key = codecs.encode(key, 'rot_13')
-    print "ROT13 key:           %s" % (key)
+    print("ROT13 key:           %s" % (key))
     # get offset of shellcode 2
     pkey = create_string_buffer(key)
     pkeyint = cast(pkey, POINTER(c_ushort))
@@ -27,7 +28,7 @@ def solve_cipher(src):
     c = ((src[2] - 0x89 + 256) % 256)
     d = ((src[3] - 0xE5 + 256) % 256)
 
-    print "VINEGERE CIPHER key: %c%c%c%c" % (a,b,c,d)
+    print("VINEGERE CIPHER key: %c%c%c%c" % (a,b,c,d))
 
 def solve_xor(src):
     a = src[0] ^ 0x55
@@ -35,7 +36,7 @@ def solve_xor(src):
     c = src[2] ^ 0x89
     d = src[3] ^ 0xE5
     s = struct.pack("<I", 0x4a514f75)
-    print "STEAMING XOR key:    %c%c%c%c%s" % (a,b,c,d,s)
+    print("STEAMING XOR key:    %c%c%c%c%s" % (a,b,c,d,s))
 
 def rc4_key_schedule(key):
     # create the rc4 key schedule
@@ -93,7 +94,7 @@ def solve_rc4(src):
         list_of_ints = decrypted[8:]
         if isprintable(''.join(chr(x) for x in list_of_ints)):
             #print ''.join(chr(x) for x in list_of_ints)
-            print "RC4 key:             %s" % (key)
+            print("RC4 key:             %s" % (key))
             return key
 
 def solve_flag(flag_int, seed):
@@ -114,7 +115,7 @@ def solve_flag(flag_int, seed):
             b =  struct.pack("<Q", C)
             c =  struct.pack("<Q", B)
             d =  struct.pack("<Q", A)
-            print "FLAG:                %s%s%s%s" % (d,c,b,a)
+            print("FLAG:                %s%s%s%s" % (d,c,b,a))
             return
 
 def main():

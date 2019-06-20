@@ -1,3 +1,4 @@
+from __future__ import print_function
 import SocketServer
 import random
 import hashlib
@@ -112,10 +113,10 @@ class HandleRequest(SocketServer.BaseRequestHandler, object):
     def aes_send(self, msg):
         r = self.request
         msg = msg.encode('utf-8')
-        print msg
+        print(msg)
         enc = self.CIPHER.encrypt(msg + ((16 - len(msg) % 16) * '\x00'))
         enc = enc.encode('base64')
-        print enc
+        print(enc)
         r.sendall(enc)
 
     def aes_recv(self, n=1024):
@@ -145,7 +146,7 @@ class HandleRequest(SocketServer.BaseRequestHandler, object):
             random_message = get_random_message().strip()
             self.aes_send(random_message)
             response = self.aes_recv()
-            print response
+            print(response)
             user_id, msg_type, msg = validate_format(response)
 
             if check_response(random_message, response):
